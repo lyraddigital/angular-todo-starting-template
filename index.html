@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Todo</h1>
+        <img
+          id="languageLogo"
+          src="assets/images/languageLogo.svg"
+          alt="Angular Logo"
+        />
+      </header>
+      <form>
+        <input
+          type="text"
+          name="todoText"
+          placeholder="Create a new todo..."
+          value=""
+        />
+        <button type="submit" id="createTodo">+</button>
+      </form>
+      <div id="todoList">
+        <div id="todoListHeader">
+          <span>2 items left</span>
+          <ul id="todoFilters">
+            <li class="active">
+              <button>All</button>
+            </li>
+            <li>
+              <button>Active</button>
+            </li>
+            <li>
+              <button>Completed</button>
+            </li>
+          </ul>
+          <button id="clearCompleted">Clear Completed</button>
+        </div>
+        <ul id="todoListBody">
+          <li class="checked">
+            <button class="todoStatus">&#10003;</button>
+            <span class="todoText">Do Angular course</span>
+            <button class="removeTodo">
+              <img
+                class="deleteLogo"
+                src="assets/images/deleteTodoLogo.svg"
+                alt="Delete Todo"
+              />
+            </button>
+          </li>
+          <li>
+            <button class="todoStatus">&#10003;</button>
+            <span class="todoText">Do React course</span>
+            <button class="removeTodo">
+              <img
+                class="deleteLogo"
+                src="assets/images/deleteTodoLogo.svg"
+                alt="Delete Todo"
+              />
+            </button>
+          </li>
+          <li>
+            <button class="todoStatus">&#10003;</button>
+            <span class="todoText">Do Vue.js course</span>
+            <button class="removeTodo">
+              <img
+                class="deleteLogo"
+                src="assets/images/deleteTodoLogo.svg"
+                alt="Delete Todo"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
